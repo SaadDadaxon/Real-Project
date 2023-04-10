@@ -1,0 +1,90 @@
+.section4 {
+    padding: 80px 0px 370px 275px;
+    position: relative;
+    background: no-repeat bottom url(static/images/background/section_.png);
+
+
+    &__img {
+        position: absolute;
+        left: 653px;
+        top: 106px;
+    }
+
+    &__h1 {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 140%;
+        color: #1E1E1E;
+    }
+
+    &__p {
+        margin-top: 39px;
+        width: 550px;
+        height: 154px;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        color: #2D2C2E;
+    }
+
+    &__con {
+        top: 146px;
+        left: 975px;
+        position: absolute;
+        width: 950px;
+        height: 476px;
+        background-image: url(/images/background/section/Vector\ 25.svg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+
+        &__img {
+            width: 580px;
+            margin: 0 0px 0px 90px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 380px) {
+    .section4 {
+        padding: 30px 0px 0px 16px;
+        position: static;
+
+        &__img {
+            width: 150px;
+            position: absolute;
+            left: 230px;
+            top: 3075px;
+        }
+
+        &__h1 {
+            font-size: 24px;
+        }
+
+        &__p {
+            width: 340px;
+            font-size: 14px;
+        }
+
+        &__con {
+            margin: 31px 0px 0px 0px;
+            position: static;
+            width: 364px;
+            height: 257px;
+            background-image: url(/images/background/section/Vector\ 25\ \(1\).svg);
+            background-repeat: no-repeat;
+            background-position: bottom;
+
+            &__img {
+                width: 313px;
+                margin: 0 0px 0px 20px;
+            }
+        }
+
+    }
+
+}

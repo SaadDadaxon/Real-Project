@@ -1,0 +1,139 @@
+.section10 {
+    width: 100%;
+    padding: 50px 300px 30px 275px;
+
+    &__con {
+        width: 500px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__h1 {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 140%;
+        color: #1E1E1E;
+    }
+
+    &__line {}
+
+    &__list {
+        margin-top: 40px;
+    }
+
+    &__1 {
+        width: 100px;
+        height: 100px;
+        border: 3px solid #F5921D;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 50px;
+
+        &__con {}
+
+        &__h1 {
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 140%;
+            color: #F5921D;
+        }
+
+        &__p {
+            width: 550px;
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            color: #1E1E1E;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__item:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+
+    &__item:nth-child(4) {
+        flex-direction: row-reverse;
+    }
+
+    &__img {}
+}
+
+
+@media only screen and (max-width: 380px) {
+    .section10 {
+        width: 380px;
+        padding: 30px 16px 50px 16px;
+
+        &__con {
+            width: 340px;
+            display: flex;
+        }
+
+        &__h1 {
+            font-size: 24px;
+        }
+
+        &__line {
+            width: 130px;
+        }
+
+        &__list {
+            margin-top: 40px;
+        }
+
+        &__1 {
+            width: 50px;
+            height: 50px;
+            border: 1.5px solid #F5921D;
+            border-radius: 30px;
+        }
+
+        &__item {
+            flex-direction: column;
+            margin-bottom: 50px;
+
+            &__con {}
+
+            &__h1 {
+                font-size: 24px;
+            }
+
+            &__p {
+                width: 340px;
+                font-family: 'Gilroy';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 140%;
+                color: #1E1E1E;
+                margin-bottom: 20px;
+            }
+        }
+
+        &__item:nth-child(2) {
+            flex-direction: column;
+        }
+
+        &__item:nth-child(4) {
+            flex-direction: column;
+        }
+
+        &__img {}
+    }
+}

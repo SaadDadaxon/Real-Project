@@ -1,0 +1,44 @@
+{% load static %}
+
+        <header class="header">
+            <nav class="nav">
+                <a href="{% url 'main:index' %}" class="nav__logo"></a>
+                <ul id="list" class="nav__list nav-links">
+                    <li class="nav__item">
+                        <a class="nav__link" href="{% url 'about:index' %}">О нас</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="{% url 'main:solution' %}">Решение</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="{% url 'product:index' %}">Продукция</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="{% url 'main:service' %}">Сервисный центр</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="{% url 'main:project' %}">Наши работы</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="{% url 'main:investor' %}">Для инвесторов</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="{% url 'contact:contact' %}">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="nav__lang">
+                    <li class="nav__lang1">
+                        <img src="{% static '/images/icons/UZ.svg' %}" alt="">
+                    </li>
+                    <li class="nav__lang1">
+                        <img src="{% static '/images/icons/RU.svg' %}" alt="">
+                    </li>
+                    <li class="nav__lang1">
+                        <img src="{% static '/images/icons/ENG.svg' %}" alt="">
+                    </li>
+                </ul>
+                <button id="burger" class="nav__burger">
+                    <img src="{% static '/images/icons/burger.svg' %}" alt="">
+                </button>
+            </nav>
+        </header>

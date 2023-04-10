@@ -1,0 +1,128 @@
+.section6 {
+    width: 100%;
+    padding: 50px 300px 0px 275px;
+    background: no-repeat bottom url(static/images/background/section_.png);
+
+
+    &__con {
+        width: 330px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__heading {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 140%;
+        color: #1E1E1E;
+    }
+
+    &__list {
+        margin-top: 40px;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px
+    }
+
+    &__item:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+
+    &__item:nth-child(4) {
+        flex-direction: row-reverse;
+    }
+
+    &__con1 {}
+
+    &__h1 {
+        width: 623px;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 120%;
+        color: #17365E;
+    }
+
+    &__p {
+        width: 695px;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        color: #1E1E1E;
+        margin-top: 30px;
+    }
+
+    &__img {
+        width: 600px;
+        height: 400px;
+        border: 5px solid #FFFFFF;
+        border-radius: 12px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .section6 {
+        width: 380px;
+        padding: 30px 16px 0px 16px;
+
+        &__con {
+            width: 240px;
+        }
+
+        &__line {
+            width: 130px;
+        }
+
+        &__heading {
+            font-size: 24px;
+        }
+
+        &__list {
+            margin-top: 40px;
+        }
+
+        &__item {
+            /////
+            display: flex;
+            flex-direction: column;
+            // justify-content: space-between;
+            margin-bottom: 30px
+        }
+
+        &__item:nth-child(2) {
+            flex-direction: column;
+        }
+
+        &__item:nth-child(4) {
+            flex-direction: column;
+        }
+
+        &__con1 {}
+
+        &__h1 {
+            width: 350px;
+            font-size: 24px;
+        }
+
+        &__p {
+            width: 350px;
+            font-size: 16px;
+            margin-top: 30px;
+        }
+
+        &__img {
+            margin-top: 30px;
+            width: 350px;
+            height: 250px;
+        }
+    }
+}

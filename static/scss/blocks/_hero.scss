@@ -1,0 +1,68 @@
+.hero {
+    width: 100%;
+    background-image: url(static/images/background/hero/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0px 268px 275px;
+
+    &__heading {
+        width: 743px;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 120%;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+    }
+
+    &__heading1 {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+        margin: 20px 0px 40px 0px;
+    }
+
+    &__btn {
+        width: 200px;
+        height: 48px;
+        background: #FCD318;
+        border-radius: 12px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .hero {
+        width: 380px;
+        padding: 100px 26px 268px 16px;
+        background-position: center;
+
+        &__heading {
+            width: 338px;
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 120%;
+            letter-spacing: 0.01em;
+        }
+
+        &__heading1 {
+            width: 232px;
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            margin: 20px 0px 40px 0px;
+        }
+
+        &__btn {
+            width: 200px;
+            height: 48px;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+        <main>
+            <section class="section3">
+                <img class="section3__img" src="{% static '/images/background/section3/æ¬α¿¡Φ«Γ_ßÑαó¿ßá_ƒ¡ñÑ¬ß 1.png' %}" alt="">
+                <form class="section3__form">
+                    <h1 class="section3__h1">Бесплатная консультация</h1>
+                    {{ form.name }}
+                    {{ form.phone }}
+                    {{ form.descriptions }}
+                    <button class="section3__btn">Отправить<img class="section3__btn1"
+                            src="{% static '/images/background/section3/union-1.svg' %}" alt=""></button>
+                    <ul class="section3__list">
+                        <li class="section3__item">
+                            <img class="section3__img1" src="{% static '/images/icons/telephone.svg' %}" alt="">
+                            <p class="section3__p1">+998-71-234-31-35 +998-71-867-87-45</p>
+                        </li>
+                        <li class="section3__item">
+                            <img class="section3__img1" src="{% static '/images/icons/location.svg' %}" alt="">
+                            <p class="section3__p1">100788, г. Ташкент, ул. Ш. Тимура, 91А</p>
+                        </li>
+                        <li class="section3__item">
+                            <img class="section3__img1" src="{% static '/images/icons/latter.svg' %}" alt="">
+                            <p class="section3__p1">info@site.uz</p>
+                        </li>
+                    </ul>
+                </form>
+            </section>
+        </main>
+
+{% endblock %}

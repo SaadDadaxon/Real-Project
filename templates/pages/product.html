@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <main>
+        <section class="product" style="width: 1920px; padding: 100px 276px;">
+            <div style="display: flex;">
+                <h1
+                        style="font-family: 'Gilroy'; font-style: normal; font-weight: 600; font-size: 40px; line-height: 140%; color: #1E1E1E;">
+                    Наша продукция</h1>
+            </div>
+            <ul
+                    style="margin: 30px 0px; display: flex; align-items:center; justify-content: space-between; width: 600px;">
+                {% for cate in categories %}
+                <button style="border-radius: 30px; padding: 10px 20px;">{{ cate.title }}</button>
+                {% endfor %}
+            </ul>
+            <ul style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+                {% for product in products %}
+                    <li style="border: 1px solid; margin-bottom: 30px;">
+                        {% if product.image %}
+                            <img style="width: 430px; height: 240px; border: 1px solid yellow;"
+                                 src="{{ product.image.url }}">
+                        {% endif %}
+                        <h1
+                                style="margin: 20px 0px 30px 20px; font-family: 'Gilroy'; font-style: normal; font-weight: 600; font-size: 20px; line-height: 25px; color: #17365E;">
+                            {{ product.title }}</h1>
+                        <a href="{% url 'product:detail' product.id%}"> <button
+                                style="padding: 14px 71px 14px 43px; margin: 0px 0px 30px 20px; font-family: 'Gilroy'; font-style: normal; font-weight: 500; font-size: 16px; line-height: 19px; color: #17365E;">
+                            Подробнее
+                        </button></a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </section>
+    </main>
+{% endblock %}

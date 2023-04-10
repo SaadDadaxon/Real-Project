@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <section style="width: 1920px; display: flex; justify-content: space-between; padding: 50px 275px;">
+        <img style="border: 1px solid; width: 430px; height: 240px;" src="{{ product.image.url }}" alt="">
+        <div style="border: 1px solid; width: 910px; height: 520px; padding: 30px 40px 40px 50px; ">
+            <div style="padding-bottom: 40px; border-bottom: 1px solid #BBBBBB; display: flex; justify-content: space-between;">
+                <div>
+                    <h1 style="font-family: 'Gilroy'; font-style: normal; font-weight: 600; font-size: 30px; line-height: 140%; color: #17365E;">
+                        {{ product.title }}</h1>
+                    <div style="margin-top: 30px; width: 395px; display: flex; justify-content: space-between;">
+                        <button style="padding: 10px 50px;font-family: 'Gilroy'; font-style: normal; font-weight: 500; font-size: 16px; line-height: 120%; letter-spacing: 0.01em; color: #1F1F1F;">Описание</button>
+                        <button style="padding: 10px 50px;font-family: 'Gilroy'; font-style: normal; font-weight: 500; font-size: 16px; line-height: 120%; letter-spacing: 0.01em; color: #1F1F1F;">Характеристика</button>
+                    </div>
+                </div>
+                <div >
+                    <h2 style="font-family: 'Gilroy'; font-style: normal; font-weight: 500; font-size: 16px; line-height: 120%; letter-spacing: 0.01em; color: #206623;">В наличии</h2>
+                    {% if product.price %}
+                    <h2 style="margin: 15px 0px; font-family: 'Gilroy'; font-style: normal; font-weight: 500; font-size: 16px; line-height: 120%; letter-spacing: 0.01em; color: #1E1E1E;">Цена: {{ product.price }}</h2>
+                    {%else %}
+                    <h2 style="margin: 15px 0px; font-family: 'Gilroy'; font-style: normal; font-weight: 500; font-size: 16px; line-height: 120%; letter-spacing: 0.01em; color: #1E1E1E;">Цена: Договорная</h2>
+                    {% endif %}
+                    <a href="{% url 'contact:contact' %}"><button style="padding: 14px 32px; border-radius: 10px; background: #FCD318; font-family: 'Gilroy'; font-style: normal; font-weight: 500; font-size: 16px; line-height: 19px; color: #1E1E1E;">Связаться с нами</button></a>
+                </div>
+            </div>
+            <p style="width: 550px; margin-top: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptates harum voluptate eaque, non delectus explicabo quas asperiores hic, quae adipisci quisquam illo aut perspiciatis nesciunt reiciendis officia rem saepe qui voluptatibus, eum totam incidunt pariatur! Ipsa quod rem sed exercitationem optio accusamus fuga earum obcaecati Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, quos esse officia animi debitis eveniet minus. Fugit id itaque maxime repellat quia commodi sequi et dolore facilis modi nobis, dolores, minima consectetur ab nisi, eius quas voluptas? Natus molestias mollitia ipsum. Totam perspiciatis exercitationem numquam dicta. Facilis dolores veritatis eius vero ipsam adipisci quaerat minus at quasi dicta officia necessitatibus natus ab eveniet officiis, quibusdam similique est dignissimos nobis itaque possimus libero, iste alias numquam? Modi hic alias placeat rem animi nam, quaerat ipsa harum cum voluptate odit autem blanditiis omnis laboriosam perferendis dolor temporibus atque consequuntur maiores eos? Accusantium?</p>
+        </div>
+    </section>
+{% endblock %}

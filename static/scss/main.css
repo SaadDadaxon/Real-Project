@@ -1,0 +1,91 @@
+/*
+Error: Invalid CSS after "...ctor\ 25\ \(1\)": expected ";", was ".svg);"
+        on line 177 of static/scss/blocks/_section.scss
+        from line 4 of static/scss/main.scss
+
+172:         &__con1 {
+173:             margin-top: 80px;
+174:             position: static;
+175:             width: 364px;
+176:             height: 242px;
+177:             background-image: url(/images/background/section/Vector\ 25\ \(1\).svg);
+178:             background-repeat: no-repeat;
+179:             background-position: bottom;
+180: 
+181:             &__img {
+182:                 width: 350px;
+
+Backtrace:
+static/scss/blocks/_section.scss:177
+static/scss/main.scss:4
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:815:in `block in try_declaration'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:1284:in `rethrow'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:820:in `try_declaration'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:743:in `declaration_or_ruleset'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:697:in `block_contents'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:421:in `media_directive'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:234:in `special_directive'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:209:in `directive'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/engine.rb:321:in `to_tree'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/stack.rb:88:in `block in with_import'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/stack.rb:88:in `with_import'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:468:in `update_stylesheet'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:294:in `watch'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin.rb:109:in `method_missing'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:354:in `watch_or_update'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/bin/sass:8:in `<top (required)>'
+/usr/bin/sass:25:in `load'
+/usr/bin/sass:25:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...ctor\ 25\ \(1\)\": expected \";\", was \".svg);\"\A         on line 177 of static/scss/blocks/_section.scss\A         from line 4 of static/scss/main.scss\A \A 172:         &__con1 {\A 173:             margin-top: 80px;\A 174:             position: static;\A 175:             width: 364px;\A 176:             height: 242px;\A 177:             background-image: url(/images/background/section/Vector\ 25\ \(1\).svg);\A 178:             background-repeat: no-repeat;\A 179:             background-position: bottom;\A 180: \A 181:             &__img {\A 182:                 width: 350px;"; }

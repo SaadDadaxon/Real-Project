@@ -1,0 +1,132 @@
+.section9 {
+    padding: 50px 350px 80px 350px;
+
+    &__heading {
+        margin-bottom: 40px;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 140%;
+        letter-spacing: 0.01em;
+        color: #1F1F1F;
+        text-align: center;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__item {
+        position: relative;
+        width: 340px;
+        height: 270px;
+        background: linear-gradient(100.38deg, #3F689C 2.83%, #17365E 75.2%);
+        border-radius: 5px;
+    }
+
+    &__line {}
+
+    &__con {
+        margin: 25px 0px 55px 20px;
+        width: 90px;
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        border: 10px solid #ffffff28;
+    }
+
+    &__h2 {
+        margin: 40px 0px 26px 0px;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: #1F1F1F;
+    }
+
+    &__p {
+        margin-left: 20px;
+        width: 243px;
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 130%;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+    }
+
+    &__img {
+        position: absolute;
+        top: 25px;
+        right: 40px;
+    }
+
+    &__p1 {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        color: #1E1E1E;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .section9 {
+        width: 380px;
+        padding: 30px 16px 100px 16px;
+
+        &__heading {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+        &__list {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &__line {}
+
+
+        &__p {
+            margin-left: 20px;
+            width: 243px;
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 130%;
+            letter-spacing: 0.01em;
+            color: #FFFFFF;
+        }
+
+        &__img {
+            position: absolute;
+            top: 25px;
+            right: 40px;
+        }
+
+        &__p1 {
+            width: 350px;
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            text-align: start;
+            color: #1E1E1E;
+        }
+    }
+
+}
